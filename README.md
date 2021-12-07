@@ -4,9 +4,9 @@
 La aplicación proporciona información o asistencia de primeros auxilios, determinando técnicas inmediatas para reaccionar ante situaciones de peligro que un individuo presente.
 
 #### Instalación
- 1.- Clonar el repositorio con el comando **git clone https://gitlab.com/FranciscoElorza/aplicacion-brigada-sos.git**
+ 1.- Clonar el repositorio con el comando **git clone https://github.com/franciscoElorza/bitcam-brigada-sos.git**
 
-Una vez ejecutado este comandonse creara una carpeta con el nombre **aplicacion-brigada-sos** la cual contiene el proyecto
+Una vez ejecutado este comandonse creara una carpeta con el nombre **bitcam-app-brigada-sos** la cual contiene el proyecto
 
 2.- Abrir el proyecto.
 

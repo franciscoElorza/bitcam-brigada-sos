@@ -1,0 +1,193 @@
+
+/* BOTON SETTING */
+.contenedor-background-setting{
+  background: #219EBC;
+  height: auto;
+}
+
+.setting{
+  width: 60px;
+  height: 55px;
+  margin-left: 92%;
+  background: none;
+  border: none;
+}
+
+.img-setting{
+  width: 40px;
+}
+
+
+.contenedor-background {
+  height: auto;
+  background: #219EBC;
+  padding-bottom: 45px;
+}
+
+/* CARD FULL-PRINCIPAL */
+.card-principal {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.title{
+  font-size: 25px;
+  color: #707070;
+  font-weight: bold;
+}
+
+/* BUSCADOR */
+.contenedor-buscador{
+  width: 65%;
+}
+
+.input-buscador{
+  border: 1px solid #707070;
+}
+
+.form-buscador {
+  position: relative;
+}
+
+.form-buscador span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+}
+.form-buscador .fa-search {
+  color: #707070;
+  height: 27px;
+  width: 25px;
+}
+
+.input-buscador {
+  height: 55px;
+  /* text-indent: 33px; */
+  border-radius: 10px;
+  border: 1px solid #707070;
+
+}
+
+/* .form-input:focus {
+  box-shadow: none;
+  border: none
+} */
+
+/* CARD SECCION */
+.card-seccion{
+  border: none;
+  height: 245px;
+  width: 100%;
+  display: table;
+}
+
+.border-izquierdo{
+  border-right: 1px solid #707070;
+}
+
+.hr {
+  border-bottom: 1px solid #707070;
+  width: 82%;
+  margin:auto;
+
+}
+
+.card-seccion-body{
+  /* Forma 1 centrar */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  /* Forma 2 centrar */
+  display: table-cell;
+  vertical-align: middle;
+
+  /* Forma 3 centrar */
+  /* position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 50%;
+  text-align: center; */
+}
+
+.title-informacion{
+  font-size: 21px;
+  color: #707070;
+}
+
+.texto-informacion{
+  font-size: 24px;
+  color: #707070;
+  margin-top: 35px;
+
+}
+
+/* Imagenes secciones */
+.img-secciones{
+  cursor: pointer;
+}
+
+
+.toast-body{
+  background-color: rgb(233, 75, 75);
+  color: white;
+}
+
+.img-seccion-emergencia{
+  width: 280px;
+  height: 120px;
+
+}
+
+.img-seccion-asesoria{
+  width: 130px;
+  height: 182px;
+}
+
+.img-seccion-imagenes{
+  width: 165px;
+  height: 147px;
+}
+
+.img-seccion-videos{
+  width: 158px;
+  height: 101px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px)  {
+  .contenedor-background {
+    min-height: 100%;
+    max-height: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .setting{
+    margin-left: 87%;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .hr {
+    display: none;
+  }
+
+  .border-izquierdo{
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .setting{
+    margin-left: 80%;
+  }
+  
+}
+
+
+

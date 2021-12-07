@@ -1,0 +1,105 @@
+<div class="contenedor-background-setting pt-2 ">
+
+  <div class="dropdown" *ngIf="user$ | async as user">
+
+
+    <button class="btn dropdown-toggle" class="setting" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="../../../assets/img/settings.png" class="img-setting" alt="">
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li *ngIf="user"><a class="dropdown-item" (click)="cerrarSesion()">Cerrar Sesión</a></li>
+      <li>
+        <a class="dropdown-item">
+          <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" alt=""
+              width="30"
+              height="30"
+              >
+          {{user?.displayName || user?.email }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+
+  <div class="contenedor-background d-flex justify-content-center align-items-center">
+    <div class="card card-principal text-center">
+
+      <div class="container">
+      <div class="card-body">
+        <h5 class="card-title title">Brigada S.O.S</h5>
+        <p class="card-text title-informacion">¿Estoy en problemas y no se como resolverlos?</p>
+
+        <!-- SECCION MODAL -->
+        <!-- modal-dialog modal-dialog-centered -->
+        <div class="modal fade" id="modalEmergencia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¡Oops... Ésta función aun no está lista!</h5>
+              </div>
+              <div class="modal-body">
+                Nuestros programadores siguen trabajando para que puedas disfrutar de esta función sin ningún inconveniente.
+                Mientras tanto te podemos facilitar los numeros de emergencia más comunes:
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Emergencias: 911</p> 
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Bomberos: (951) 506 0248</p> 
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Cruz Roja: (951) 516 4455</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- SECCION 911 EMERGENCIA -->
+      <div class="row ">
+        <div class="col-sm-12">
+
+          <div class="card card-seccion">
+            <div class="card-body card-seccion-body ">
+              <img src="../../../assets/img/911.png"  class="card-img-top img-fluid img-secciones img-seccion-emergencia" alt="911" title="911" data-toggle="modal" href="#modalEmergencia">
+              <h5 class="card-title texto-informacion">Es una emergencia</h5>
+            </div>
+          </div>
+
+        <!-- SECCION NECESITO ASESORIA -->
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <!-- SECCION REQUIERO IMAGENES-->
+      <div class="row">
+        <div class="col-sm-6 border-izquierdo" >
+          <div class="card card-seccion">
+            <div class="card-body card-seccion-body">
+              <img src="../../../assets/img/ima.png"
+                    class="card-img-top img-fluid img-secciones img-seccion-imagenes" alt="img" title="img" [routerLink]="['/requiero-imagenes']" routerLinkActive="router-link-active" >
+              <h5 class="card-title texto-informacion m-0">Búsqueda por imagenes</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECCION REQUIERO VIDEOS -->
+        <div class="col-sm-6">
+          <div class="card card-seccion">
+            <div class="card-body card-seccion-body">
+              <img src="../../../assets/img/video.png" class="card-img-top img-fluid img-seccion-videos img-secciones" alt="youtube" title="youtube" [routerLink]="['/requiero-videos']" routerLinkActive="router-link-active" >
+              <h5 class="card-title texto-informacion">Búsqueda por videos</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+

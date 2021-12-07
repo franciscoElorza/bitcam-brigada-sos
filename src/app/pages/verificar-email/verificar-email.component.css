@@ -1,0 +1,15 @@
+.contenedor-background{
+  border-bottom: 1px solid #cccc;
+}
+
+.logotipo{
+width: 40px;
+}
+
+.reenviar-email{
+display: flex;
+}
+
+.no-rebicio-corrreo{
+  padding-right: 20px;
+}

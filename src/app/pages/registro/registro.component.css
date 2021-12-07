@@ -1,0 +1,128 @@
+.contenedor-background {
+  height: 100%;
+  background: #219EBC;
+  padding-top: 60px;
+}
+
+/* LOGOTIPO */
+.content-logotipo{
+  display: block;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 20px;
+  }
+
+
+.logotipo{
+  width: 200px;
+  padding: 5px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  background: #ffffff;
+}
+
+input{
+  /* border: 1px solid #707070; */
+  border-radius: 18px;
+  color: #9A9191;
+  font-size: 20px;
+}
+
+
+.input-email{
+  padding-right: 70px !important;
+} 
+
+/* Cambio en tamaño de inputs */
+.contenedor-input{
+  width: 450px;
+  margin: 0 auto 20px;
+}
+
+
+.contenedor-input i{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 24px;
+  color: #9A9191;
+}
+
+.contenedor-input .icon-password{
+  top: 38%;
+  cursor: pointer;
+}
+
+.card{
+  border-radius: 20px;
+}
+.text-validacion{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-registro{
+  background: #DD3131;
+  border-radius:13px;
+  font-size: 20px;
+  width: 155px;
+  height: 48px;
+  height: 48px;
+  color: #ffffff;
+  margin:  0 auto;
+}
+
+.content-info-registrarme{
+  display: block;
+  text-align: center;
+
+}
+
+.info-registrarme{
+    font-size: 20px;
+    color: #707070;
+}
+
+.btn-registrarme{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .contenedor-input{
+    width: auto;
+  }
+  .contenedor-background {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 960px)  and (orientation: landscape) {
+  .contenedor-background {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn-google{
+    width: auto;
+  }
+
+  .content-logotipo {  
+    margin-top: -110px;
+  } 
+}
+
+@media screen and (max-width: 280px) {
+  .btn-google{
+    height: auto;
+  }
+}
+
+

@@ -1,0 +1,193 @@
+.containerr{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.contenedor-background{
+  height: auto;
+  background: #219EBC;
+}
+
+/* CARD PRINCIPAL */
+.card-principal {
+  width: 100%;
+  min-height: 87.5vh;
+  max-height: auto;
+}
+
+/* DISEÑO CON BOOSTRAP */
+
+.title{
+  font-size: 25px;
+  width: 90%;
+  color: #707070;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/* LOGOTIPO */
+.img-logotipo{
+  width: 100px;
+  height: 132px;
+}
+
+/* BUSCADOR */
+.contenedor-buscador{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* padding-left: 40px; */
+}
+
+.form-buscador {
+  position: relative;
+}
+
+.input-buscador {
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  z-index: 2;
+}
+
+.form-buscador button {
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  height: 27px;
+  width: 27px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.form-buscador .fa-search {
+  color: #707070;
+}
+
+.form-buscador .fa-search:hover {
+  color: black;
+}
+
+
+/* responsive */
+@media screen and (max-width: 1400px)  {
+
+  .contenedor-background {
+    min-height: 100%;
+    max-height: auto;
+  }
+
+  #videos{
+    text-align: center;
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 1024px)  {
+
+  #videos{
+    width: 115%;
+    position: relative;
+    left: -65px;
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (max-width: 767px)  {
+
+  #videos{
+    width: 125%;
+    left: -85px;
+    /* background-color: green; */
+  }
+}
+
+@media screen and (max-width: 670px)  {
+
+  #videos{
+    width: 100%;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 669px)  {
+
+  #videos{
+    width: 130%;
+    left: -80px;
+  }
+}
+@media screen and (max-width: 646px)  {
+
+  #videos{
+    width: 135%;
+    left: -90px;
+  }
+}
+
+@media screen and (max-width: 628px)  {
+
+  #videos{
+    width: 140%;
+    left: -100px;
+  }
+}
+
+@media screen and (max-width: 580px)  {
+
+  #videos{
+    width: 145%;
+  }
+}
+
+@media screen and (max-width: 470px)  {
+
+  #videos{
+    width: 130%;
+     left: -55px;
+     /* background-color:aqua; */
+   }
+}
+
+@media screen and (max-width: 370px)  {
+
+  #videos{
+    width: 165%;
+    left: -77px;
+    /* background-color:brown; */
+  }
+
+  .containerr{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 280px)  {
+ 
+  #videos{
+    width: 120%;
+    left: -70px;
+  }
+}
+
+
+/* @media screen and (max-width: 1400px) and (orientation: landscape)  {
+  .contenedor-background {
+    height: auto;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+
+  .contenedor-logotipo{
+    text-align: center;
+  }
+
+  .contenedor-logotipo {
+    padding-bottom: 15px;
+}
+ 
+}

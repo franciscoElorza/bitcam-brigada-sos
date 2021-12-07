@@ -1,0 +1,34 @@
+
+.contenedor-background{
+  background: #219EBC;
+}
+
+.btn-regresar{
+  top: -50px;
+  margin-left: 2%;
+  font-size: 30px;
+  color: white;
+}
+
+.setting{
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  right: 40px;
+  border: none;
+  background: none;
+}
+
+.img-setting{
+  width: 40px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 540px) {
+  .setting{
+    right: 2%;
+  }
+
+}

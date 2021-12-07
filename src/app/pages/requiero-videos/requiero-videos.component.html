@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor-background pb-5">
+
+  <div class="card card-principal">
+    <div class="containerr">
+
+      <div class="card-body">
+        
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-5 contenedor-logotipo d-flex align-items-center">
+            <img src="../../../assets/img/logotipo.png" class="card-img-top img-fluid img-logotipo" alt="...">
+            <h5 class="card-title title">Brigada S.O.S</h5>
+          </div>
+      
+          <div class="col-lg-8 col-md-8 col-sm-7">
+            <div class="contenedor-buscador">
+              <form id="form" class="form-buscador" [formGroup]="buscadorForm" (ngSubmit)="buscarVideo()">
+                <input 
+                      type="search" 
+                      class="form-control input-buscador" 
+                      id="search" 
+                      placeholder="Buscar Solución" 
+                      aria-label="Search"
+                      type="email"
+                      name="busqueda"
+                      formControlName="busqueda"
+                      >
+                <button class="left-pan" type="submit"><i class="fa fa-search" ></i> </button>
+              </form>
+            </div>
+          </div>
+         
+          <h3 class="text-secondary text-center" *ngIf="mensaje_seleccion" >Es necesario que ingrese su padecimiento para que los resultados se muestren</h3>
+        </div>
+
+        <div class="container">
+
+          <h3 class="text-secondary mb-5 mt-4" *ngIf="resultado_busqueda"> Se encontraron los siguientes resultados para{{ ' ' + busqueda  }}</h3>
+        <div class="row">
+
+              <div class="embed-responsive embed-responsive-16by9">
+                <div id="videos">
+                </div>
+              </div>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

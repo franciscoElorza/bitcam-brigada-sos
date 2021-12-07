@@ -1,0 +1,64 @@
+.contenedor-background{
+  height: auto;
+  background: #219EBC;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* CARD */
+.card{
+  margin: 0 auto;
+}
+
+.content-logotipo{
+  display: block;
+  text-align: center;
+  }
+
+.logotipo{
+  width: 200px;
+}
+.card{
+  border-radius: 20px;
+}
+
+.card-body{
+  /* Padding: arriba, derecha, abajo, izquierda */
+  padding: 0 40px 0 40px;
+}
+
+.title-bienvenida{
+  color:#707070 ;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.title-bienvenida{
+  color: #707070 ;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.text-descripcion{
+  color: #707070 ;
+  font-size: 22px;
+}
+
+.btn-siguiente{
+  background: #DD3131;
+  border-radius:13px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 88px;
+  float: right;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* RESPONSIVE  */
+@media screen and (max-width: 1400px)  {
+  .contenedor-background {
+    min-height: 100%;
+    max-height: auto;
+  }
+}

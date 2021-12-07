@@ -1,0 +1,31 @@
+
+<!--  -->
+<div class="contenedor-background">
+
+<div class="dropdown" *ngIf="user$ | async as user">
+
+  <button type="button" class="btn btn-regresar" (click)="regresar()"><i class="fas fa-long-arrow-alt-left"></i></button>
+
+
+  <button class="btn dropdown-toggle" class="setting" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="../../../assets/img/settings.png" class="img-setting" alt="">
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li *ngIf="user"><a class="dropdown-item" (click)="cerrarSesion()">Cerrar Sesión</a></li>
+    <li>
+      <a class="dropdown-item">
+        <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" alt=""
+              width="30"
+              height="30"
+              >
+        {{ user?.displayName || user?.email }}
+      </a>
+      </li>
+  </ul>
+</div>
+</div>
+
+
+
+

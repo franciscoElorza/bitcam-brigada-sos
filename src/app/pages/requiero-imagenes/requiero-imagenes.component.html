@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor-background pb-5">
+
+  <div class="card card-principal">
+    <div class="containerr">
+
+      <div class="card-body">
+
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-5 contenedor-logotipo d-flex align-items-center">
+              <img src="../../../assets/img/logotipo.png" class="card-img-top img-fluid img-logotipo" alt="...">
+              <h5 class="card-title title">Brigada S.O.S</h5>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-7">
+              <div class="contenedor-buscador">
+                <form id="form" class="form-buscador" [formGroup]="buscadorForm" (ngSubmit)="onBuscar()">
+                  
+                  <div class="form-group row p-2">
+                      <select class="form-select select-buscador form-select-lg  mb-1" aria-label=".form-select-lg example"
+                              type="text"
+                              name="categoria"
+                              formControlName="categoria"
+                              >
+                      
+                        <option value="">Seleccione una categoria</option>
+                        <option value="Quemadura">Quemadura</option>
+                        <option value="Heridas">Heridas</option>
+                        <option value="Hematoma">Hematoma</option>
+                        <option value="Sangrado">Sangrado</option>
+                      </select>
+            
+                  </div>
+            
+                    <button type="submit" class="btn btn-search btn-outline-secondary btn-block">
+                      <span  class="left-pan"><i class="fa fa-search"></i> </span>
+                    </button>
+              
+                </form>
+              </div>
+            </div>
+           
+          </div>
+        
+        <h3 class="text-secondary text-center" *ngIf="mensaje_seleccion" >Es necesario que seleccione su padecimiento para que los resultados se muestren</h3>
+        
+      </div>
+
+      <!-- CARDS -->
+      <div class="card-container-padecimiento">
+      <h3 class="text-secondary mb-5">{{mensaje_padecimiento}}</h3>
+      
+       <div class="row">
+         
+         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xs-12 mb-5 " *ngFor="let imagen of imagenes">
+           
+          <div class="card card-padecimiento">
+            <img src="../../../assets/img/bordes-imagen.png" class="bg-verde img-fluid"  alt="..." >
+            <br class="br"> 
+            <div class="hr"></div> 
+
+            <div class="border-left"></div> 
+            <div class="card-body">
+              <h1 class="num_paso ">{{imagen.num_paso}}</h1>
+              <h5 class="card-title card-paso-padecimiento">{{imagen.title | uppercase}}</h5>
+              <img src="{{imagen.url_imagen}}" class="card-img-top img-fluid mb-2"  alt="...">
+              <p class="card-text card-descripcion-padecimiento text-align-justify">{{imagen.description}}</p>
+
+            </div>
+            <div class="card-footer border-none">
+              <p class="card-text card-descripcion-padecimiento text-secondary"> <span class="text-danger  nota-recomendacion"><strong>Nota:</strong></span>{{imagen.recomendacion || 'Ninguna' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      </div>
+
+  </div>
+</div>
+
+
+

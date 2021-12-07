@@ -116,6 +116,10 @@
               "devServerTarget": "bitcam-app-brigada-sos:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

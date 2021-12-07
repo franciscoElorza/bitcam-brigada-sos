@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "app-brigada-sos-1d19c": {
+      "hosting": {
+        "bitcam-app-brigada-sos": [
+          "app-brigada-sos-1d19c"
+        ]
+      }
+    }
+  }
+}

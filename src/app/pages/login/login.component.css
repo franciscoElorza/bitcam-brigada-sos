@@ -1,0 +1,172 @@
+
+.contenedor-background {
+  height: auto;
+  width: 100%;
+  background: #219EBC;
+  padding-top: 60px;
+}
+
+/* LOGOTIPO */
+.content-logotipo{
+  display: block;
+  text-align: center;
+  margin-top: -130px;
+  margin-bottom: 20px;
+  }
+
+.logotipo{
+  width: 200px;
+  padding: 5px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  background: #ffffff;
+}
+
+input{
+  /* border: 1px solid #707070; */
+  border-radius: 18px;
+  color: #9A9191;
+  font-size: 20px;
+}
+
+.input-email{
+  padding-right: 70px !important;
+}
+
+.contenedor-input{
+  width: 450px;
+  margin: 0 auto 20px;
+}
+
+.contenedor-input i{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 24px;
+  color: #9A9191;
+}
+
+.contenedor-input .icon-password{
+  cursor: pointer;
+}
+
+.card{
+  border-radius: 20px;
+}
+
+.text-validacion{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-ingresar{
+  background: #DD3131;
+  border-radius:13px;
+  font-size: 20px;
+  width: 155px;
+  height: 48px;
+  height: 48px;
+  color: #ffffff;
+  margin:  0 auto;
+}
+
+hr {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn-google{
+  background: #DD3131;
+  border-radius: 18px;
+  height: 50px;
+  width: 352px;
+  color: #ffffff;
+  border: 1px solid #707070;
+  margin-bottom: 28px;
+  font-size: 20px;
+  margin:  0 auto;
+
+}
+
+.btn-facebook{
+  background: #2217BC;
+  margin-bottom: 20px;
+}
+
+.icon-google, .icon-facebook{
+  margin-right: 45px;
+}
+
+.content-info-registrarme{
+  display: block;
+  text-align: center;
+}
+
+.info-registrarme{
+    font-size: 20px;
+    color: #707070;
+}
+
+.btn-registrarme{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.password-reset{
+  display: block;
+  text-align: center;
+  color: red;
+
+}
+
+.alert.ocultar{
+  display: none !important;
+}
+
+.alert.mostrar{
+  display: block;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1400px)  {
+  .contenedor-input{
+    width: auto;
+  }
+
+  .contenedor-background {
+    min-height: 100%;
+    max-height: auto;
+  }
+}
+
+@media screen and (max-width: 320px)  {
+  .contenedor-input{
+    width: auto;
+  }
+
+  .contenedor-background {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn-google{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .btn-google{
+    height: auto;
+  }
+}
+
+
+
+
+
+

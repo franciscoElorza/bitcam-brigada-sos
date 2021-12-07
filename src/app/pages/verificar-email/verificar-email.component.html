@@ -1,0 +1,29 @@
+
+<div class="container p-5">
+  <div class="card mt-5" *ngIf="user$ | async as user; else loading">
+    <div class="card-body p-5">
+
+      <h3 class="card-title mb-4">Esta por terminar de registrar la cuenta</h3>
+      <div class="form-group">
+        <!-- INFORMAR AL USUARIO LO QUE ESTA SUCEDIENDO Y LOS PASOS A SEGUIR -->
+        <p class="mb-4" >
+          Hemos enviado un correo electrónico de confirmación a <strong>{{ user?.email }}.</strong>
+          Por favor revise su correo electrónico y haga clic en el enlace para verificar su dirección de correo electrónico y terminar de registrar la cuenta.
+        </p>
+      </div>
+
+      <div class="form-group reenviar-email mb-5">
+        <p class="no-rebicio-corrreo">¿No recibio el correo?</p><button class="btn btn-secondary" (click)="enviarEmail()">Reenviar email de verificación</button>
+      </div>
+
+      <div class="form-group text-center ">
+        <button class="btn btn-primary btn-lg" [routerLink]="['/bienvenida']" routerLinkActive="router-link-active" >Terminar registro</button>
+      </div>
+
+    </div>
+</div>
+
+<!-- Cuando un usuario se registra automaticamente angularfire hace el login de nuestro usuario-->
+<ng-template #loading>
+  Loading...
+</ng-template>

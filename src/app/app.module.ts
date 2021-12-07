@@ -35,6 +35,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Guard - para proteccion de rutas
 import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
+import { ServiceWorkerModule } from '@angular/service-worker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,13 @@ import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
     AngularFireAuthModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireAuthGuardModule
+    AngularFireAuthGuardModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
